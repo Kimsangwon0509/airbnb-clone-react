@@ -1,6 +1,10 @@
 import React from 'react';
 import './Header.css';
 import SearchIcon from '@material-ui/icons/Search';
+import LanguageIcon from '@material-ui/icons/Language';
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import {Avatar} from "@material-ui/core";//아바타 속성의 모든것을 가져오는 컴포넌트?
+
 
 export default function Header(){
     return (
@@ -13,6 +17,13 @@ export default function Header(){
             <div className="header__center">
                 <input type="text" />
                 <SearchIcon />
+            </div>
+            <div className='header__center'>
+                <p>become host</p>
+                <input type='text'></input>
+                <LanguageIcon></LanguageIcon>
+                <ExpandMoreIcon></ExpandMoreIcon>
+                <Avatar></Avatar>
             </div>
         </div>
     )
