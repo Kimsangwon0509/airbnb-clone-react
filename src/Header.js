@@ -9,7 +9,6 @@ import {Avatar} from "@material-ui/core";//아바타 속성의 모든것을 가�
 export default function Header(){
     return (
         <div className='header'>
-            <h1>Header Components</h1>
             <img 
                 className="header__icon" 
                 src="https://i.pinimg.com/originals/3c/bf/be/3cbfbe148597341fa56f2f87ade90956.png" 
@@ -18,9 +17,8 @@ export default function Header(){
                 <input type="text" />
                 <SearchIcon />
             </div>
-            <div className='header__center'>
-                <p>become host</p>
-                <input type='text'></input>
+            <div className='header__right'>
+                <p>Become a host</p>
                 <LanguageIcon></LanguageIcon>
                 <ExpandMoreIcon></ExpandMoreIcon>
                 <Avatar></Avatar>

@@ -6,7 +6,7 @@
     top: 0;
     z-index: 100;
     width: 100%;
-    background-color: azure;
+    background-color: white;
 }
 
 .header__icon {
@@ -19,9 +19,25 @@
     display: flex;
     flex: 1;
     align-items: center;
+    max-width: fit-content;
+    padding: 10px;
+    height: 30px;
+    border: 1px solid lightgray;
+    border-radius: 999px; 
+}
+
+.header__center > input {
+    border: none;
+    padding: 10px;
+    outline-width: 0;
+    /* outline-width를 해줌으로써 인풋 박스의 모양이 나오는 것을 방지  */
+    /* width: 250px; */
 }
 
 .header__right {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    width: 15vw;
+    margin-right: 80px;
 }
