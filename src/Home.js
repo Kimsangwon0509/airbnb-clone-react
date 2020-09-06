@@ -1,11 +1,12 @@
 import React from 'react';
 import './Home.css';
-
+import Banner from './Banner.js';
+// ES7 snippets to 
 
 function Home(){    
     return (
         <div className='home'>
-            <h1>Home Components</h1>
+            <Banner />
         </div>
     )
 }
