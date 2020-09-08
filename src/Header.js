@@ -18,7 +18,7 @@ export default function Header(){
                 <SearchIcon />
             </div>
             <div className='header__right'>
-                <p>Become a host</p>
+                <p>호스트가되세요</p>
                 <LanguageIcon></LanguageIcon>
                 <ExpandMoreIcon></ExpandMoreIcon>
                 <Avatar></Avatar>

@@ -1,7 +1,9 @@
 .header {
     display: flex;
     justify-content: space-between;
+    /* align-items 는 브라우저 화면의 높이를 기준으로 중앙에 위치하게 할수 있슴 */
     align-items: center;
+    /* fixed 와의 차이는 fix는 공간을 덮어 버린다? , sticky는 다른 component와 상호작용해하지만 자리는 고수하는 느낌  */
     position: sticky;
     top: 0;
     z-index: 100;

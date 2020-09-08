@@ -14,14 +14,6 @@
     width: 300px;
 }
 
-
-.banner__searchButton {
-    background-color: white !important; 
-    font-weight: 900 !important;
-    text-transform: inherit !important;
-    color: #ff7779 !important;
-}
-
 .banner__info > button {
     background-color: #ff7779;
     color: white;
@@ -30,14 +22,25 @@
     font-weight: 600;
 }
 
+.banner__info > h5 {
+    margin-top: 10px;
+}
+
+.banner__searchButton {
+    background-color: white !important; 
+    font-weight: 900 !important;
+    text-transform: inherit !important;
+    color: #ff7779 !important;
+}
+
+
+
 .banner__info > button:hover {
     background-color: white;
     color: #ff7779;
 }
 
-.banner__info > h5 {
-    margin-top: 10px;
-}
+
 
 .banner__search {
     display: flex;
