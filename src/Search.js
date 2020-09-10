@@ -5,6 +5,7 @@ import 'react-date-range/dist/styles.css'; // main style file
 import 'react-date-range/dist/theme/default.css'; // theme css file
 import { Button } from '@material-ui/core';
 import PeopleIcon from '@material-ui/icons/People';
+import { useHistory } from 'react-router-dom';
 
 // DATE PICKER COMPONENT
 // 이전에 date-fns 묘듈을 깔아야 함 .....module 불편하게 만듬...
@@ -14,6 +15,7 @@ function Search(props) {
     setStartDate] = useState(new Date());
     const[endDate,
     setEndDate] = useState(new Date());
+    const history =useHistory();
 
     const selectionRange = {
         startDate: startDate,
@@ -38,7 +40,7 @@ function Search(props) {
               min={0}
               defaultValue={2}
               type="number" />
-            <Button>Search Airbnb</Button>
+            <Button onClick={() => history.push('/search')}>Search Airbnb</Button>
         </div>
     );
 }

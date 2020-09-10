@@ -9,20 +9,19 @@ import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
 function App() {
   return (
 
-    // BEM 벰이 뭔지 모르지만 공부 하기 said it's like a structure stuff 
     <div className="App">
       <Router>
         <Header />
         
         <Switch>
-        <Route path="/search">
+          <Route path="/search">
            <SearchPage />
           </Route>
-          <Route path="/">
+          <Route exact path="/">
             <Home />
           </Route>
+          {/* <Route exact path="/" component={Home}/> */}
         </Switch>
-
 
         <Footer />
       </Router>
